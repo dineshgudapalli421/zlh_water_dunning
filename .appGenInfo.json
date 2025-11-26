@@ -1,0 +1,29 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Nov 26 2025 13:10:36 GMT+0530 (India Standard Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "http://sapsdvapp.aws.londonhydro.cloud:8000/sap/opu/odata/sap/ZUI_WATER_DUNNING_O2",
+    "appName": "zlh_water_dunning",
+    "appTitle": "Water Dunning report - Dual Accounts",
+    "appDescription": "Water Dunning report - Dual Accounts",
+    "appNamespace": "com.sap.lh.mr",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.120.0",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.18.6",
+    "template": "List Report Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "ZCA_C_DUNN_LATEST_LOG"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
