@@ -81,7 +81,7 @@
                 <Property Name="CAStandardCompanyCode" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Standard CoCode" sap:quickinfo="Standard Company Code"/>
                 <Property Name="CAAuthorizationGroup" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Authorization Group"/>
             </EntityType>
-            <EntityType Name="ZCA_C_DUNN_LATEST_LOGType" sap:label="Root Entity for Latest Dunn Disc" sap:content-version="1">
+            <EntityType Name="WaterDunningDualAccountType" sap:label="Root Entity for Latest Dunn Disc" sap:content-version="1">
                 <Key>
                     <PropertyRef Name="BP"/>
                     <PropertyRef Name="ContractAccount"/>
@@ -357,7 +357,7 @@
                 <EntitySet Name="SAP__ValueHelpSet" EntityType="cds_zui_water_dunning.SAP__ValueHelp" sap:content-version="1"/>
                 <EntitySet Name="I_BusinessPartnerVH" EntityType="cds_zui_water_dunning.I_BusinessPartnerVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="I_ContractAccountPartnerVH" EntityType="cds_zui_water_dunning.I_ContractAccountPartnerVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
-                <EntitySet Name="ZCA_C_DUNN_LATEST_LOG" EntityType="cds_zui_water_dunning.ZCA_C_DUNN_LATEST_LOGType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="WaterDunningDualAccount" EntityType="cds_zui_water_dunning.WaterDunningDualAccountType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
                 <EntitySet Name="ZCA_I_COLLECTION_STEP_VH" EntityType="cds_zui_water_dunning.ZCA_I_COLLECTION_STEP_VHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="SAP__Currencies" EntityType="cds_zui_water_dunning.SAP__Currency" sap:content-version="1"/>
                 <EntitySet Name="SAP__UnitsOfMeasure" EntityType="cds_zui_water_dunning.SAP__UnitOfMeasure" sap:content-version="1"/>
@@ -396,7 +396,7 @@
                 </AssociationSet>
             </EntityContainer>
             <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
-            <Annotations Target="cds_zui_water_dunning.ZCA_C_DUNN_LATEST_LOGType/BP" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType/BP" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
                         <PropertyValue Property="Label" String="Business Partner"/>
@@ -451,7 +451,7 @@
                 </Annotation>
                 <Annotation Term="Common.SemanticObject" String="BusinessPartner"/>
             </Annotations>
-            <Annotations Target="cds_zui_water_dunning.ZCA_C_DUNN_LATEST_LOGType/ContractAccount" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType/ContractAccount" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
                         <PropertyValue Property="Label" String="Contract Account"/>
@@ -481,7 +481,7 @@
                 </Annotation>
                 <Annotation Term="Common.SemanticObject" String="ContractAccount"/>
             </Annotations>
-            <Annotations Target="cds_zui_water_dunning.ZCA_C_DUNN_LATEST_LOGType/CollectionStep" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType/CollectionStep" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
                     <Record>
                         <PropertyValue Property="Label" String="Collection Step"/>
@@ -504,7 +504,7 @@
             <Annotations Target="cds_zui_water_dunning.cds_zui_water_dunning_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
             </Annotations>
-            <Annotations Target="cds_zui_water_dunning.cds_zui_water_dunning_Entities/ZCA_C_DUNN_LATEST_LOG" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="cds_zui_water_dunning.cds_zui_water_dunning_Entities/WaterDunningDualAccount" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Capabilities.FilterRestrictions">
                     <Record>
                         <PropertyValue Property="NonFilterableProperties">
@@ -543,7 +543,7 @@
                     </Record>
                 </Annotation>
             </Annotations>
-            <Annotations Target="cds_zui_water_dunning.ZCA_C_DUNN_LATEST_LOGType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.SAPObjectNodeType">
                     <Record>
                         <PropertyValue Property="Name" String="DualAccountWaterDunning"/>

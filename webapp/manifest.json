@@ -120,8 +120,8 @@
       "showDraftToggle": false
     },
     "pages": {
-      "ListReport|ZCA_C_DUNN_LATEST_LOG": {
-        "entitySet": "ZCA_C_DUNN_LATEST_LOG",
+      "ListReport|WaterDunningDualAccount": {
+        "entitySet": "WaterDunningDualAccount",
         "component": {
           "name": "sap.suite.ui.generic.template.ListReport",
           "list": true,
@@ -143,8 +143,8 @@
           }
         },
         "pages": {
-          "ObjectPage|ZCA_C_DUNN_LATEST_LOG": {
-            "entitySet": "ZCA_C_DUNN_LATEST_LOG",
+          "ObjectPage|WaterDunningDualAccount": {
+            "entitySet": "WaterDunningDualAccount",
             "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
             "component": {
               "name": "sap.suite.ui.generic.template.ObjectPage"

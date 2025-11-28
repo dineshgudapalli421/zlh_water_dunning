@@ -123,7 +123,7 @@
             <Annotations Target="cds_zui_water_dunning.I_ContractAccountPartnerVHType/CAAuthorizationGroup">
                 <Annotation Term="UI.Hidden"/>
             </Annotations>
-            <Annotations Target="cds_zui_water_dunning.ZCA_C_DUNN_LATEST_LOGType">
+            <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType">
                 <Annotation Term="UI.Facets">
                     <Collection>
                         <Record Type="UI.ReferenceFacet">
@@ -132,6 +132,12 @@
                             <PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
                         </Record>
                     </Collection>
+                </Annotation>
+                <Annotation Term="UI.HeaderInfo">
+                    <Record>
+                        <PropertyValue Property="TypeName" String="Disconnection Log"/>
+                        <PropertyValue Property="TypeNamePlural" String="Disconnection Log"/>
+                    </Record>
                 </Annotation>
                 <Annotation Term="UI.Identification">
                     <Collection>
