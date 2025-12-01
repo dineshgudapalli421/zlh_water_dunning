@@ -449,7 +449,6 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
-                <Annotation Term="Common.SemanticObject" String="BusinessPartner"/>
             </Annotations>
             <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType/ContractAccount" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
@@ -479,7 +478,6 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
-                <Annotation Term="Common.SemanticObject" String="ContractAccount"/>
             </Annotations>
             <Annotations Target="cds_zui_water_dunning.WaterDunningDualAccountType/CollectionStep" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
